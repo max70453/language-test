@@ -237,7 +237,8 @@ nav li{
 }
 
 #display-final-score{
-    padding: 5%;
+    padding-top: 5%;
+    padding-bottom: 3%;
 }
 .remark{
     padding: 5%
@@ -260,7 +261,44 @@ nav li{
     font-size: 90%;
 }
 
+.text--accent{
+  color:#f08316;
+}
 
+.btn.btn-primary{
+  background-color: #FF9933;
+  border-color: #ff9933;
+}
+.btn.btn-primary:hover{
+  background-color: #f08316;
+  border-color: #f08316;
+}
+
+.title{
+  color: aliceblue;
+  font-size: 33px;
+  letter-spacing: 1px;
+}
+
+.title span{
+  display: inline-block;
+  position: relative;
+  margin-top: 50px;
+  font-size: 20px;
+  letter-spacing: normal;
+}
+
+.title span::before{
+  content: "";
+  display: block;
+  position: absolute;
+  width: 30%;
+  height: 2px;
+  left: 50%;
+  top: -25px;
+  transform: translateX(-50%);
+  background-color: #f08316;
+}
 @media only screen and (max-width: 1250px) {
     .options{
         margin-left: 8%

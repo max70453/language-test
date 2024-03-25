@@ -405,7 +405,7 @@ document.querySelector(".quiz").style.display="none";
 document.querySelector(".final-result").style.display="none";
 
 
-document.querySelector(".choose-lang").addEventListener("click",function(){
+document.querySelectorAll(".test-js").forEach(el => {el.addEventListener("click",function(){
     document.querySelector("#wrapper").style.display="none";
     lang=document.getElementById("language").value+"questions";
     document.getElementById("ques-left").textContent="Вопрос : "+(countQues+1)+"/"+window[lang].length;
@@ -423,7 +423,7 @@ document.querySelector(".choose-lang").addEventListener("click",function(){
     
 //    window.location.href="#score";
 
-});
+})});
 
 
 document.querySelector(".submit-answer").addEventListener("click",function(){
